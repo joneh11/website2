@@ -1,0 +1,198 @@
+void setup(){
+  size(500,500);
+}
+
+void draw(){
+background(255);
+
+//background with Red
+noStroke();
+fill(255,0,0);
+quad(0,0,0,30,30,0,0,0);
+quad(0,90,0,120,120,0,90,0);
+quad(0,180,0,210,210,0,180,0);
+quad(0,270,0,300,300,0,270,0);
+quad(0,360,0,390,390,0,360,0);
+quad(0,450,0,480,480,0,450,0);
+quad(0,540,0,570,570,0,540,0);
+quad(0,630,0,660,660,0,630,0);
+quad(0,720,0,750,750,0,720,0);
+quad(0,810,0,840,840,0,810,0);
+quad(0,900,0,930,930,0,900,0);
+quad(0,990,0,1020,1020,0,990,0);
+
+
+//background with Green
+fill(0,255,0);
+quad(0,30,0,60,60,0,30,0);
+quad(0,120,0,150,150,0,120,0);
+quad(0,210,0,240,240,0,210,0);
+quad(0,300,0,330,330,0,300,0);
+quad(0,390,0,420,420,0,390,0);
+quad(0,480,0,510,510,0,480,0);
+quad(0,570,0,600,600,0,570,0);
+quad(0,660,0,690,690,0,660,0);
+quad(0,750,0,780,780,0,750,0);
+quad(0,840,0,870,870,0,840,0);
+quad(0,930,0,960,960,0,930,0);
+
+
+//background with Blue
+fill(0,0,255);
+quad(0,60,0,90,90,0,60,0);
+quad(0,150,0,180,180,0,150,0);
+quad(0,240,0,270,270,0,240,0);
+quad(0,330,0,360,360,0,330,0);
+quad(0,420,0,450,450,0,420,0);
+quad(0,510,0,540,540,0,510,0);
+quad(0,600,0,630,630,0,600,0);
+quad(0,690,0,720,720,0,690,0);
+quad(0,780,0,820,820,0,780,0);
+quad(0,870,0,900,900,0,870,0);
+quad(0,960,0,990,990,0,960,0);
+
+
+//hat part one
+noStroke();
+fill(255,100,255);
+rect(200,30,100,90);
+
+//face
+stroke(0);
+fill(200,120,100);
+ellipse(250,205,250,250);
+
+//hat part two
+noStroke();
+fill(255,100,255);
+ellipse(250,86,200,14);
+stroke(0);
+fill(100);
+rect(200,75,99,5);
+
+//eyes
+stroke(0);
+fill(255);
+ellipse(200,160,60,60);
+ellipse(300,160,60,60);
+ellipse(250,120,50,50);
+
+//middle eye
+stroke(0);
+fill(0,255,0);
+ellipse(250,120,20,20);
+fill(0);
+ellipse(250,120,10,10);
+
+//left eye
+stroke(0);
+fill(255,0,0);
+ellipse (190,160,30,30);
+fill(0);
+ellipse(186,156,15,15);
+
+//right eye
+stroke(0);
+fill(0,0,255);
+ellipse(310,160,30,30);
+fill(0);
+ellipse(314,164,15,15);
+
+//smile
+stroke(0);
+fill(255,255,0);
+ellipse(250,250,150,50);
+line(175,250,325,250);
+
+//nose 
+fill(210,100,100);
+triangle(235,201,250,180,265,201);
+
+//bow
+fill(255,100,255);
+triangle(300,344,135,300,135,388);
+fill(100);
+triangle(200,344,365,300,365,388);
+fill(255,100,255);
+noStroke();
+triangle(192,344,270,325,270,364);
+stroke(0);
+rect(230,324,40,40);
+fill(100);
+rect(230,324,20,20);
+rect(250,344,20,20);
+
+
+//crazyy balloons
+
+//Lines
+
+//Front
+  line(mouseX,mouseY,mouseX, mouseY-100);
+  line(mouseX,mouseY,mouseX+50,mouseY-100);
+  line(mouseX,mouseY,mouseX-50,mouseY-100);
+
+//Row 2
+  line(mouseX,mouseY,mouseX+25, mouseY-125);
+  line(mouseX,mouseY,mouseX+75,mouseY-125);
+  line(mouseX,mouseY,mouseX-25,mouseY-125);
+  line(mouseX,mouseY,mouseX-75,mouseY-125);
+//Row 3
+ line(mouseX,mouseY,mouseX, mouseY-150);
+  line(mouseX,mouseY,mouseX+50,mouseY-150);
+  line(mouseX,mouseY,mouseX-50,mouseY-150);
+
+//Row 4
+ line(mouseX,mouseY,mouseX+25, mouseY-175);
+ line(mouseX,mouseY,mouseX-25,mouseY-175);
+ 
+ 
+ 
+//Balloons
+
+//Back Grey
+fill(100);
+ellipse(mouseX-25,mouseY-175,50,50);
+
+//Back Pink
+fill(255,100,255);
+ellipse(mouseX+25,mouseY-175,50,50);
+
+//Back green
+fill(0,255,0);
+ellipse(mouseX,mouseY-150,50,50);
+  
+//back Red
+fill(255,0,0);
+ellipse(mouseX-50,mouseY-150,50,50);
+
+//back Blue
+fill(0,0,255);
+ellipse(mouseX+50,mouseY-150,50,50);
+
+//Grey Balloons
+fill(100);
+ellipse(mouseX-25,mouseY-125,50,50);
+ellipse(mouseX+75,mouseY-125,50,50);
+
+//Pink Balloons
+fill(255,100,255);
+ellipse(mouseX+25,mouseY-125,50,50);
+ellipse(mouseX-75,mouseY-125,50,50);
+
+//Front Green
+fill(0,255,0);
+ellipse(mouseX,mouseY-100,50,50);
+
+//Front Red
+fill(255,0,0);
+ellipse(mouseX-50,mouseY-100,50,50);
+
+//Front Blue
+fill(0,0,255);
+ellipse(mouseX+50,mouseY-100,50,50);
+
+surface.setTitle(mouseX+","+mouseY); 
+}
+  
+  
